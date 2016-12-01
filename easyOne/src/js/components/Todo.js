@@ -1,8 +1,3 @@
-# React_Flux
-##单方向数据流Flux。
-###从easyOne来看，将调度器(dispatcher)，store，action，components都写到同一个Todo.js文件中，便于查看
-
-```javascript
 import React from "react";
 import {render} from "react-dom";
 import assign from 'object-assign'
@@ -140,4 +135,3 @@ class Todo extends React.Component{
 }
 
 export default Todo;
-```
