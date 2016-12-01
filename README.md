@@ -1,7 +1,8 @@
 # React_Flux
 ##单方向数据流Flux。
-###从easyOne来看，将调度器(dispatcher)，store，action，components都写到同一个Todo.js文件中，便于查看
-
+###从easyOne来看，将调度器(dispatcher)，store，action，components都写到同一个Todo.js文件中，便于查看  
+最终效果见下图   
+![todo](http://pic.mousebird.cn/Upload/github/todo_pic.png)
 ```javascript
 import React from "react";
 import {render} from "react-dom";
