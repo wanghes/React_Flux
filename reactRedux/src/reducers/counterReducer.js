@@ -1,4 +1,4 @@
-export default function(state = { count: 0 }, action) {
+export default function couterReducer(state = { count: 0 }, action) {
   const count = state.count
   switch (action.type) {
     case 'increase':
@@ -7,3 +7,4 @@ export default function(state = { count: 0 }, action) {
       return state
   }
 }
+

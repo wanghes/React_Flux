@@ -1,34 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as couterActionCreaters from '../actions/couterActionCreaters';
 
 class Counter extends React.Component {
   render() {
-
-    const { value, onIncreaseClick } = this.props
-
+    const { value, increaseAction } = this.props
     return (
       <div>
         <span>{value}</span>
-        <button onClick={onIncreaseClick}>Increase</button>
+        <button onClick={increaseAction}>Increase</button>
       </div>
     )
   }
 }
 // Action Creator
-const increaseAction = { type: 'increase' }
+
 
 function mapStateToProps(state) {
-    console.log(state);
+  console.log(state);
   return {
     value: state.count
   }
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    onIncreaseClick: () => dispatch(increaseAction)
-  }
+  let boundActionCreators = bindActionCreators(couterActionCreaters, dispatch)
+  return boundActionCreators;
 }
 
 
@@ -36,6 +35,7 @@ const CounterWrap = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);
+
 
 
 export default CounterWrap;

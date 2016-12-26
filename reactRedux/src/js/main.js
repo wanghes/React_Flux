@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory } from "react-router";
-import { createStore,combineReducers } from 'redux'
 import { Provider, connect } from 'react-redux';
 import Counter from "../components/counter";
-import reducers from "../reducers/counterReducer";
+import store from "../store";
 
 
 const ACTIVE = {color:"red"};
@@ -62,7 +61,7 @@ const UserQuery = (props) => {
 
 
 
-const store = createStore(reducers);
+console.log(Counter);
 
 
 const App = ()=>(
