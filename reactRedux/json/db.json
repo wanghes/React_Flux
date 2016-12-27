@@ -1,0 +1,128 @@
+{
+  "settings": [
+    {
+      "id": "1",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "2",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "3",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "4",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "5",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "6",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "7",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "8",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "9",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "10",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "11",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "12",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "13",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    },
+    {
+      "id": "14",
+      "time_area": "2016-12-24 10:34",
+      "direction": "推送",
+      "mating_system": "钉钉",
+      "status": "结束",
+      "times": "12"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "password": "111111"
+    },
+    {
+      "id": 2,
+      "name": "admin2",
+      "password": "222222"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import {createStore,applyMiddleware} from "redux";
-import reducers from "../reducers/counterReducer";
+import reducers from "../reducers";
 import thunkMiddleware from 'redux-thunk';
 
 let obj ={a:1,b:2};

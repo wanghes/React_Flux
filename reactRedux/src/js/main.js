@@ -2,32 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route, IndexRoute, Link, IndexLink, browserHistory, hashHistory } from "react-router";
 import { Provider, connect } from 'react-redux';
-import Counter from "../components/counter";
+import {Container,Counter,Posts} from "../components";
 import store from "../store";
 
 
-const ACTIVE = {color:"green"};
-const Container = (props) =>{
-    return (<div>
-    <h1>Application</h1>
-    <ul>
-      <li><Link      to="/"           activeStyle={ACTIVE}>/</Link></li>
-      <li><IndexLink to="/"           activeStyle={ACTIVE}>/ IndexLink</IndexLink></li>
-      <li><Link      to="/counter"      activeStyle={ACTIVE}>/Counter</Link></li>
-      <li><Link      to="/users"      activeStyle={ACTIVE}>/users</Link></li>
-      <li><IndexLink to="/users"      activeStyle={ACTIVE}>/users IndexLink</IndexLink></li>
-
-      <li><Link      to="/users/ryan" activeStyle={ACTIVE}>/users/ryan</Link></li>
-      <li><Link      to={{ pathname: '/users/wang_hes', query: { foo: 'bar' } }}
-                                      activeStyle={ACTIVE}>/users/wang_hes?foo=bar</Link></li>
-
-      <li><Link      to="/about"      activeStyle={ACTIVE}>/about</Link></li>
-    </ul>
-
-    {props.children}
-  </div>)
-}
-const Index = ()=>(
+const Home = ()=>(
     <div><h1>Index page</h1></div>
 )
 const About = ()=>(
@@ -64,18 +43,19 @@ const UserQuery = (props) => {
 
 const App = ()=>(
     <Provider store={store}>
-    <Router history={hashHistory}>
-        <Route path="/" component={Container}>
-        <IndexRoute component={Index} />
-        <Route path="about" component={About}/>
-        <Route path="counter" component={Counter} />
-        <Route path="users" component={Users}>
-             <IndexRoute component={UsersIndex} />
-             <Route path=":id" component={UserQuery} />
-             <Route path="/:id?foo=bar" component={UserQuery} />
-        </Route>
-        </Route>
-    </Router>
+      <Router history={hashHistory}>
+          <Route path="/" component={Container}>
+            <IndexRoute component={Home} />
+            <Route path="about" component={About}/>
+            <Route path="counter" component={Counter} />
+            <Route path="Posts" component={Posts} />
+            <Route path="users" component={Users}>
+                 <IndexRoute component={UsersIndex} />
+                 <Route path=":id" component={UserQuery} />
+                 <Route path="/:id?foo=bar" component={UserQuery} />
+            </Route>
+          </Route>
+      </Router>
     </Provider>
 );
 
