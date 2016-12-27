@@ -6,7 +6,7 @@ import Counter from "../components/counter";
 import store from "../store";
 
 
-const ACTIVE = {color:"red"};
+const ACTIVE = {color:"green"};
 const Container = (props) =>{
     return (<div>
     <h1>Application</h1>
@@ -60,8 +60,6 @@ const UserQuery = (props) => {
 }
 
 
-
-console.log(Counter);
 
 
 const App = ()=>(
